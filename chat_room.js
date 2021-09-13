@@ -2,18 +2,19 @@
 
 //ADD YOUR FIREBASE LINKS HERE
 // Your web app's Firebase configuration
-var firebaseConfig = {
-    apiKey: "AIzaSyBRRNapywILcxv_LgY-dRnIewMlbBCmWis",
-    authDomain: "chat-app-f586b.firebaseapp.com",
-    databaseURL: "https://chat-app-f586b-default-rtdb.firebaseio.com",
-    projectId: "chat-app-f586b",
-    storageBucket: "chat-app-f586b.appspot.com",
-    messagingSenderId: "317949488128",
-    appId: "1:317949488128:web:4292561d345f52e487fce5"
-  };
+ const firebaseConfig = {
+      apiKey: "AIzaSyAekSwtbGcnLWXZxeFcN7pGU414v2Esioc",
+      authDomain: "chat-app-55107.firebaseapp.com",
+      databaseURL: "https://chat-app-55107-default-rtdb.firebaseio.com",
+      projectId: "chat-app-55107",
+      storageBucket: "chat-app-55107.appspot.com",
+      messagingSenderId: "652565942352",
+      appId: "1:652565942352:web:e7b960ecf5b86cc77b4155"
+    };
     // Initialize Firebase
 
-    firebase.initializeApp(firebaseConfig);
+    const app = initializeApp(firebaseConfig);
+
     var user_name= localStorage.getItem("user_name");
     document.getElementById("user_name").innerHTML=" Welcome  "+user_name;
     function addroom(){
